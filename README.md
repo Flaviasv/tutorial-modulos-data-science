@@ -2,8 +2,9 @@
 
 Autoras: @leportella @jtemporal
 
+Esse material foi originalmente apresentado na Python Brasil 13, essa versão atualizada para ser ministrada na Python Nordeste 2021 (edição online).
 
-[SLIDES AQUI :)](http://slides.com/leticiaportella/tutorial-analise-numerica)
+[SLIDES AQUI :)](https://slides.com/jtemporal/intro-cdd-pyne-2021)
 
 ## Descrição
 
