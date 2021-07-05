@@ -1,23 +1,59 @@
 # Material do Tutorial Introdução aos Módulos de Análise de Dados
 
-Autoras: @leportella @jtemporal
+Autoras: @jtemporal @leportella
 
-Esse material foi originalmente apresentado na Python Brasil 13, essa versão atualizada para ser ministrada na Python Nordeste 2021 (edição online).
+Esse material foi originalmente apresentado na Python Brasil 13, essa versão atualizada para ser apresentado na [Python Nordeste 2021] (edição online).
 
-[SLIDES AQUI :)](https://slides.com/jtemporal/intro-cdd-pyne-2021)
+[OS SLIDES ESTÃO AQUI 😉](https://slides.com/jtemporal/intro-cdd-pyne-2021)
 
 ## Descrição
 
-Numpy, Pandas, Matplotlib... os módulos de análise de dados são inúmeros! E suas potencialidades também! Vamos mostrar como ler planilhas, separar dados, criar gráficos e fazer uma série de análises usando um pouquinho de cada método. O objetivo deste tutorial é ter uma ideia de por onde começar a analisar dados!
+Numpy, Pandas, Matplotlib... os módulos de análise de dados são inúmeros! E suas potencialidades também! Vamos ver como ler planilhas, separar dados, criar gráficos e fazer uma série de análises usando um pouquinho de cada método. O objetivo deste tutorial é ter uma ideia de por onde começar a analisar dados!
 
-**Duração**: 4h
+### Configurações de ambiente
 
-**Configurações de ambiente**: Python3, Pandas, Numpy, Scipy, Matplotlib, Jupyter Notebook (ou Anaconda que cobre todos os anteriores)
+Você vai precisar de uma coleção de bibliotecas. Você pode instalá-las da sua forma favorita, mas o mais importante é usar as seguintes versões:
 
-**Pré-requisitos**: conhecimento mínimo da linguagem (loops, condicionais, variáveis, etc)
+- Python >= `3.6` (eu tô usando a versão `3.8.2`), caso você queira instalar uma dessas versões eu recomendo o uso do pyenv e eu [ensino nesse artigo](https://jtemporal.com/pyenv-inicio/) como instalar versões do python com pyenve
+- Todas as bibliotecas listadas no arquivo `requirements.txt` nas versões apontadas lá.
 
-**Idioma**: Português
+Caso você precise de ajuda como usar o arquivo `requirements.txt` dê uma olhada nessa [colinha que eu escrevi que explica como esse arquivo funciona](https://jtemporal.com/requirements-txt/).
 
+Abaixo tem uma colinha de todos os passos para criar um ambiente virtual em python e  instalar os requisitos 😉
+
+Para conferir a versão do Python na sua máquina:
+
+```console
+python --version
+```
+
+ou 
+
+```console
+python3 --version
+```
+
+Para criar um ambiente virtual:
+
+```console
+python3 -m venv .env
+```
+
+Para ativar um ambiente virtual:
+
+```console
+source .env/bin/activate
+```
+
+Para instalar os requisitos do arquivo `requirements.txt`:
+
+```console
+pip install -r requirements.txt
+```
+
+### Pré-requisitos
+
+Conhecimento mínimo da linguagem (loops, condicionais, variáveis, etc)
  
 ## Tópicos abordados:
 
@@ -31,7 +67,15 @@ Numpy, Pandas, Matplotlib... os módulos de análise de dados são inúmeros! E 
 ## Outras informações
 
 Dentro da pasta web temos páginas HTML para cada um dos notebooks. Então para fácil visualização não interativa você pode usar apenas o seu navegador favorito e ler o conteúdo dos notebooks sem precisar do Jupyter.
-<!--
-## Execute os notebooks no Binder!
-[![Binder](https://img.shields.io/badge/launch-binder-579aca.svg?logo=data:image/png;base64,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)](https://mybinder.org/v2/gh/leportella/tutorial-modulos-data-science/master)
--->
+
+## Outros links úteis
+
+- [Cheatsheet de Pandas](https://leportella.com/cheatsheet/pandas/) da [Leticia Portella](https://leportella.com/) com comandos de pandas.
+
+## Execute os notebooks no Binder
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jtemporal/tutorial-modulos-data-science/main)
+
+Caso você não queira/possa instalar nada no seu computador você deve fazer um fork deste repositório, copiar o link para ele e iniciar um [Binder neste site](http://mybinder.org).
+
+Assim você vai conseguir começar sem precisar instalar nada no seu computador.

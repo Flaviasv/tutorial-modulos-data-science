@@ -1,11 +1,11 @@
 # Ambiente de desenvolvimento
-ipython
-jupyter
+ipython==7.25.0
+jupyter==1.0.0
 
 # Módulos de análise
-numpy
-pandas
+numpy==1.21.0
+pandas==1.3.0
 
 # Módulos de visualizaço
-matplotlib
-seaborn
+matplotlib==3.4.2
+seaborn==0.11.1
